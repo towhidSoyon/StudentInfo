@@ -59,8 +59,15 @@ public class MainActivity extends AppCompatActivity {
         studentList= studentDB.studentDAO().readData();
         adapter.getStudentList(studentList);
         recyclerView.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
+
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        loadData();
+    }
 
     private void setUpDB() {
         studentDB= Room.databaseBuilder(MainActivity.this, StudentDB.class, "student_database").allowMainThreadQueries().build();

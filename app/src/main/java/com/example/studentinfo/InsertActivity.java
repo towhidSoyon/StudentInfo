@@ -35,6 +35,9 @@ public class InsertActivity extends AppCompatActivity implements  View.OnClickLi
         insertCode5 = findViewById(R.id.insertCourse5Id);
         insertCode6 = findViewById(R.id.insertCourse6Id);
         insertRegistration = findViewById(R.id.registrationId);
+        insertButton=findViewById(R.id.insertButtonId);
+
+        insertButton.setOnClickListener(this);
 
 
 

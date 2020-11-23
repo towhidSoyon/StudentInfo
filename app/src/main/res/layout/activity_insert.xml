@@ -181,6 +181,7 @@
 
             <Button
                 android:text="Insert"
+                android:id="@+id/insertButtonId"
                 android:textColor="@android:color/black"
                 android:textAllCaps="false"
                 android:textSize="20sp"

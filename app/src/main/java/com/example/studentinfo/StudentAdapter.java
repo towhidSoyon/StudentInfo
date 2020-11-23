@@ -17,6 +17,7 @@ public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.MyViewHo
 
     public void getStudentList(List<Student> studentList){
         this.studentList=studentList;
+
     }
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.single_item, parent, false);
@@ -28,7 +29,7 @@ public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.MyViewHo
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
             Student student= studentList.get(position);
             holder.titleTextView.setText(student.getName());
-            holder.yearTextView.setText(student.getId());
+            holder.yearTextView.setText(student.getStudentId());
             holder.ratingTextView.setText(student.getReg());
             holder.plotTextView1.setText(student.getCourse1());
             holder.plotTextView2.setText(student.getCourse2());

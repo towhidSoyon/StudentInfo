@@ -25,6 +25,7 @@
         android:layout_margin="20sp"
         android:id="@+id/insertButtonId"
         android:background="@android:color/holo_orange_dark"
+        android:backgroundTint="@android:color/holo_orange_dark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
